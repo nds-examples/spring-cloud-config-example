@@ -28,8 +28,5 @@ public class Application implements ApplicationRunner {
         for (String name : args.getOptionNames()){
             logger.info("arg-" + name + "=" + args.getOptionValues(name));
         }
-
-        boolean containsOption = args.containsOption("person.name");
-        logger.info("Contains person.name: " + containsOption);
     }
 }
